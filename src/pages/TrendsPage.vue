@@ -9,7 +9,7 @@ const store = useStore()
 /// methods
 
 const fetchData = async () => {
-  const url = `https://g.tenor.com/v1/trending?key=${APIKEY}&q=trendy`
+  const url = `https://g.tenor.com/v1/trending?key=${APIKEY}`
   store.dispatch('trends/fetchData', url)
 }
 
